@@ -16,7 +16,6 @@ public class SavingsAccount extends Account {
     public void processMonth() {
         double interest = getBalance() * interestRate;
         deposit(interest);
-        System.out.println("Interest credited: " + interest + " kr");
+        System.out.println(getHolder() + ": interest credited");
     }
-
 }

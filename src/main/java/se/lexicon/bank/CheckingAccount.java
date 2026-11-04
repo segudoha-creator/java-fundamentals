@@ -14,7 +14,7 @@ public class CheckingAccount extends Account {
     @Override
     public void processMonth() {
         deduct(monthlyFee);
-        System.out.println("Monthly fee charged: " + monthlyFee + " kr");
+        System.out.println(getHolder() + ": monthly fee charged");
     }
 
 }

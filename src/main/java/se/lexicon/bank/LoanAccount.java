@@ -15,7 +15,7 @@ public class LoanAccount extends Account {
     public void processMonth() {
         double interest = getBalance() * loanRate;
         deposit(interest);
-        System.out.println("Loan interest added: " + interest + " kr");
+        System.out.println(getHolder() + ": loan interest added");
     }
 
 }
